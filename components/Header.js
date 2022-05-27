@@ -11,7 +11,7 @@ export default function Header() {
                     <h1>Thoughts Into Words</h1>
                 </div>
             </Link>
-            <a target='_blank' rel="noopener noreferrer" href="https://github.com/nosyminotaur/blog" style={{ marginLeft: 'auto' }} rel="noreferrer">
+            <a target='_blank' rel="noopener noreferrer" href="https://github.com/nosyminotaur/blog" style={{ marginLeft: 'auto' }}>
                 <img style={{ width: '2em', height: '2em' }} src="/images/github.png" alt="Github" />
             </a>
         </div>
