@@ -1,0 +1,29 @@
+{
+  "name": "next-markdown-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^2.0.0-rc.2",
+    "@mdx-js/react": "^2.0.0-rc.2",
+    "@reach/disclosure": "^0.17.0",
+    "@reach/tooltip": "^0.17.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^2.1.2",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "rehype-highlight": "^5.0.2",
+    "remark-frontmatter": "^4.0.1",
+    "use-local-storage": "^2.3.6"
+  },
+  "devDependencies": {
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1"
+  }
+}
