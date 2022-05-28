@@ -2,7 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked';
-import Header from '../../components/Header'
+import Header from '../../components/Header';
+import Head from 'next/head';
 
 export default function PostPage({
   frontmatter: { title, date },
@@ -11,6 +12,9 @@ export default function PostPage({
 }) {
   return (
     <>
+    <Head>
+      <title>{title}</title>
+    </Head>
       <Header />
       <div className='card'>
         <h1>{title}</h1>
