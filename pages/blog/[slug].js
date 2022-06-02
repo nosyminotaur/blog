@@ -6,7 +6,7 @@ import Header from '../../components/Header';
 import Head from 'next/head';
 
 export default function PostPage({
-  frontmatter: { title, date },
+  frontmatter: { title, date, readQuantity },
   slug,
   content,
 }) {
@@ -21,7 +21,7 @@ export default function PostPage({
         <div style={{ display: 'flex', marginTop: 12, marginBottom: '1em' }}>
           <h6 style={{ fontWeight: 300 }}>{date}</h6>
           <h6 style={{ fontWeight: 300, marginLeft: 4 }}>·</h6>
-          <h6 style={{ fontWeight: 300, marginLeft: 4 }}> 4 min read</h6>
+          <h6 style={{ fontWeight: 300, marginLeft: 4 }}>{readQuantity}</h6>
         </div>
         <div className='post-body'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
